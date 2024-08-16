@@ -1,0 +1,233 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+.navbar {
+  background-color: #000000;
+  overflow: visible;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.menu-container a:hover {
+  color: #a9b0ff;
+}
+.navbar a,
+.navbar select {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+}
+.navbar select {
+  background-color: #000000;
+  border: 1px solid rgb(0, 0, 0);
+}
+#navbar1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+#navbar2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+.org-name {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+.menu-container {
+  display: flex;
+  align-items: center;
+}
+#content {
+  margin-top: 60px;
+  padding: 20px;
+}
+#sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1001;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+#sidebar a,
+#sidebar select {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+#sidebar a:hover {
+  color: #a9b0ff;
+}
+#sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#sidebar select {
+  width: 80%;
+  margin: 10px auto;
+  background-color: #111;
+  border: 1px solid #000000;
+}
+.openSidebar {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  margin-left: 15px;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar a,
+  .navbar select {
+    display: none;
+  }
+  .openSidebar {
+    display: block;
+  }
+  #content {
+    margin-top: 50px;
+  }
+}
+
+h1 {
+  padding: 70px;
+  color: #000;
+}
+
+.card {
+  background-color: transparent;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.social-icons a {
+  color: white;
+  text-decoration: none;
+}
+
+.social-icons svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 140px 20px 40px; /* Tambahkan padding atas untuk mengakomodasi video */
+  position: relative;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.contact-info,
+.social-media {
+  margin-bottom: 20px;
+}
+
+.contact-info h3,
+.social-media h3 {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffd700;
+}
+
+.social-media a {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #333;
+  position: relative;
+  z-index: 5;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding-top: 100px; /* Sesuaikan padding atas pada layar kecil */
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-info,
+  .social-media {
+    text-align: center;
+  }
+}
+.map {
+  width: 50%;
+  height: 50%;
+  border: 0;
+  margin: 0 auto;
+}
